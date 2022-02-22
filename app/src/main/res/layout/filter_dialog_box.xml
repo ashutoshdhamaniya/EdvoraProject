@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/accentColor"
+    android:backgroundTint="@color/primaryColor"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accentColor"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Filters"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:hint="State"-->
+<!--            android:padding="0dp"-->
+<!--            app:endIconTint="@color/white"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            app:hintTextColor="@color/white">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/stateAutoCompleteTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:inputType="none"-->
+<!--                android:padding="10dp"-->
+<!--                android:textSize="20sp"-->
+<!--                tools:ignore="LabelFor"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:foreground="@color/primaryColor"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:hint="City"-->
+<!--            app:endIconTint="@color/white"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            app:hintTextColor="@color/white">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/cityAutoCompleteTextView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:inputType="none"-->
+<!--                android:foreground="@color/primaryColor"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <Spinner
+            android:id="@+id/stateSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:layout_marginTop="30dp"
+            style="@style/Theme.AppCompat.Light"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:layout_marginTop="30dp"
+            app:theme="@style/ThemeOverlay.AppCompat"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
